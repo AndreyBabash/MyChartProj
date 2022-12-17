@@ -1,0 +1,159 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      640s
+      414s
+      640s
+      414s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 85.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #1042#1080#1093#1110#1076#1085#1110' '#1076#1072#1085#1110
+      object Label1: TLabel
+        Align = Top
+        Size.Width = 640.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'xn'
+        TabOrder = 1
+      end
+      object EditXn: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        Position.Y = 17.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = #1042#1074#1077#1076#1080#1090#1077' '#1085#1072#1095#1072#1085#1086#1077' '#1079#1085#1072#1095#1077#1085#1080#1077
+      end
+      object Label2: TLabel
+        Align = Top
+        Position.Y = 39.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'xk'
+        TabOrder = 0
+      end
+      object EditXk: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Position.Y = 56.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = #1042#1074#1077#1076#1080#1090#1077' '#1082#1086#1085#1077#1095#1085#1086#1077' '#1079#1085#1072#1095#1077#1085#1080#1077
+      end
+      object TrackBar1: TTrackBar
+        Align = Top
+        CanParentFocus = True
+        Max = 2.000000000000000000
+        Orientation = Horizontal
+        Position.Y = 78.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Value = 0.100000001490116100
+        OnChange = TrackBar1Change
+      end
+      object Label3: TLabel
+        Align = Top
+        Position.Y = 97.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'step'
+        TabOrder = 5
+      end
+      object Button2: TButton
+        Align = Top
+        Position.Y = 114.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1079#1085#1072#1095#1077#1085#1080#1103
+        OnClick = Button2Click
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 56.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #1043#1088#1072#1092#1110#1082
+      object Chart1: TChart
+        Foot.Font.StyleExt = {00040000000200000004000000}
+        Legend.Title.Font.StyleExt = {00070000000000000004000000}
+        Legend.Visible = False
+        SubFoot.Font.StyleExt = {00040000000200000004000000}
+        View3D = False
+        Zoom.Brush.Kind = None
+        Zoom.Pen.Fill.Color = claSilver
+        Align = Client
+        TabOrder = 0
+        Size.Width = 640.000000000000000000
+        Size.Height = 376.000000000000000000
+        Size.PlatformDefault = False
+        ColorPaletteIndex = 13
+        object Series1: TLineSeries
+          Brush.BackColor = x00FFFFFF
+          Pointer.InflateMargins = True
+          Pointer.Style = psRectangle
+          XValues.Name = 'X'
+          XValues.Order = loAscending
+          YValues.Name = 'Y'
+          YValues.Order = loNone
+        end
+      end
+      object Button1: TButton
+        Align = Bottom
+        Position.Y = 376.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = #1055#1086#1073#1091#1076#1091#1074#1072#1090#1080
+        OnClick = Button1Click
+      end
+    end
+  end
+end
